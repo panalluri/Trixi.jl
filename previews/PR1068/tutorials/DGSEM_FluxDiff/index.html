@@ -52,7 +52,7 @@ ode = semidiscretize(semi, tspan);</code></pre><p>To analyse the entropy conserv
 ────────────────────────────────────────────────────────────────────────────────────────────────────
  Simulation running &#39;CompressibleEulerEquations2D&#39; with DGSEM(polydeg=3)
 ────────────────────────────────────────────────────────────────────────────────────────────────────
- #timesteps:                  0                run time:       8.00000000e-07 s
+ #timesteps:                  0                run time:       7.00000000e-07 s
  Δt:             0.00000000e+00                time/DOF/rhs!:         NaN s
  sim. time:      0.00000000e+00
  #DOF:                    16384
@@ -68,8 +68,8 @@ ode = semidiscretize(semi, tspan);</code></pre><p>To analyse the entropy conserv
 ────────────────────────────────────────────────────────────────────────────────────────────────────
  Simulation running &#39;CompressibleEulerEquations2D&#39; with DGSEM(polydeg=3)
 ────────────────────────────────────────────────────────────────────────────────────────────────────
- #timesteps:                 61                run time:       1.04508543e+00 s
- Δt:             2.65388337e-06                time/DOF/rhs!:  1.02802608e-07 s
+ #timesteps:                 61                run time:       1.17833016e+00 s
+ Δt:             2.65388337e-06                time/DOF/rhs!:  1.17063701e-07 s
  sim. time:      4.00000000e-01
  #DOF:                    16384
  #elements:                1024
@@ -4400,7 +4400,7 @@ analysis_callback = AnalysisCallback(semi, interval=100);</code></pre><p>We now 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
  Simulation running &#39;CompressibleEulerEquations2D&#39; with DGSEM(polydeg=3)
 ────────────────────────────────────────────────────────────────────────────────────────────────────
- #timesteps:                  0                run time:       6.00000000e-07 s
+ #timesteps:                  0                run time:       7.00000000e-07 s
  Δt:             0.00000000e+00                time/DOF/rhs!:         NaN s
  sim. time:      0.00000000e+00
  #DOF:                    16384
@@ -4416,8 +4416,8 @@ analysis_callback = AnalysisCallback(semi, interval=100);</code></pre><p>We now 
 ────────────────────────────────────────────────────────────────────────────────────────────────────
  Simulation running &#39;CompressibleEulerEquations2D&#39; with DGSEM(polydeg=3)
 ────────────────────────────────────────────────────────────────────────────────────────────────────
- #timesteps:                 37                run time:       6.02171964e-01 s
- Δt:             9.70561500e-03                time/DOF/rhs!:  9.64069417e-08 s
+ #timesteps:                 37                run time:       6.96108824e-01 s
+ Δt:             9.70561500e-03                time/DOF/rhs!:  1.12697805e-07 s
  sim. time:      4.00000000e-01
  #DOF:                    16384
  #elements:                1024
@@ -7474,4 +7474,4 @@ UFCwigUFhTlm0Oo/a+jm92jgEEoAAAAASUVORK5CYII=
   
   "/>
 </svg>
-<p>Of course, you can use more than these two fluxes in Trixi. Here, we will give a short list of possible fluxes for the compressible Euler equations. For the volume flux Trixi provides for example <a href="../../reference-trixi/#Trixi.flux_ranocha-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_ranocha</code></a>, <a href="../../reference-trixi/#Trixi.flux_shima_etal-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_shima_etal</code></a>, <a href="../../reference-trixi/#Trixi.flux_chandrashekar-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_chandrashekar</code></a>, <a href="../../reference-trixi/#Trixi.flux_kennedy_gruber-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_kennedy_gruber</code></a>. As surface flux you can use all volume fluxes and additionally for instance <a href="../../reference-trixi/#Trixi.flux_lax_friedrichs"><code>flux_lax_friedrichs</code></a>, <a href="../../reference-trixi/#Trixi.flux_hll"><code>flux_hll</code></a>, <a href="../../reference-trixi/#Trixi.flux_hllc-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_hllc</code></a>.</p><hr/><p><em>This page was generated using <a href="https://github.com/fredrikekre/Literate.jl">Literate.jl</a>.</em></p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../scalar_linear_advection_1d/">« 1 Introduction to DG methods</a><a class="docs-footer-nextpage" href="../shock_capturing/">3 Shock capturing with flux differencing and stage limiter »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.12 on <span class="colophon-date" title="Tuesday 22 February 2022 18:02">Tuesday 22 February 2022</span>. Using Julia version 1.7.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
+<p>Of course, you can use more than these two fluxes in Trixi. Here, we will give a short list of possible fluxes for the compressible Euler equations. For the volume flux Trixi provides for example <a href="../../reference-trixi/#Trixi.flux_ranocha-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_ranocha</code></a>, <a href="../../reference-trixi/#Trixi.flux_shima_etal-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_shima_etal</code></a>, <a href="../../reference-trixi/#Trixi.flux_chandrashekar-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_chandrashekar</code></a>, <a href="../../reference-trixi/#Trixi.flux_kennedy_gruber-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_kennedy_gruber</code></a>. As surface flux you can use all volume fluxes and additionally for instance <a href="../../reference-trixi/#Trixi.flux_lax_friedrichs"><code>flux_lax_friedrichs</code></a>, <a href="../../reference-trixi/#Trixi.flux_hll"><code>flux_hll</code></a>, <a href="../../reference-trixi/#Trixi.flux_hllc-Tuple{Any, Any, Integer, CompressibleEulerEquations1D}"><code>flux_hllc</code></a>.</p><hr/><p><em>This page was generated using <a href="https://github.com/fredrikekre/Literate.jl">Literate.jl</a>.</em></p></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="../scalar_linear_advection_1d/">« 1 Introduction to DG methods</a><a class="docs-footer-nextpage" href="../shock_capturing/">3 Shock capturing with flux differencing and stage limiter »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 0.27.12 on <span class="colophon-date" title="Wednesday 23 February 2022 07:09">Wednesday 23 February 2022</span>. Using Julia version 1.7.2.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
